@@ -15,7 +15,7 @@ To install:
  - The user can input any number of characters, but 3 is recommended for presentation
  - Colors can be entered either as keyword (red, blue, black), RGB (rgb(255,0,0)), or Hexadecimal (#FF0000).  Incorrect color codes or keywords will return an error however.
  - Logos are genereated at 300x200 pixels, but SVG file types are scalable!  There is a 'sample.html' file which you can drop the SVG file in to see how it looks.
- - You can view this [video walkthrough](https://drive.google.com/file/d/1mzfbCbjbNXutj7GV1GnbKJTCVCXP-zSs/view?usp=sharing) to see the application in use.
+ - You can view this [video walkthrough]() to see the application in use.
  - And this is a sample logo generated with the application:\
 ![Sample Logo](./example_logo/Sample%20Logo.png)
 
