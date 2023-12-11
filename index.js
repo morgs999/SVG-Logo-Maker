@@ -1,7 +1,9 @@
+// Required Libraries
 const fs = require('fs');
 const inquirer = require('inquirer');
 const { renderShape } = require('./lib/shapes.js');
 
+// List of User Inputs
 const questions = [
     {
         type: 'input',
@@ -26,11 +28,12 @@ const questions = [
     }
 ]
 
+// Function to create Logo from Users Input and Shape Class
 inquirer.prompt(questions).then(answers => {
     const logo = renderShape(answers);
     fs.writeFile('./example_logo/logo.svg', logo, function (err) {
         if (err) {
-            console.log(err);
+            console.log("Error caught", err);
         }
     })
     console.log("Logo has been generated!");
