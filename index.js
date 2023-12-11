@@ -1,5 +1,6 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
+const { renderShape } = require('./lib/shapes.js');
 
 const questions = [
     {
@@ -25,3 +26,12 @@ const questions = [
     }
 ]
 
+inquirer.prompt(questions).then(answers => {
+    const logo = renderShape(answers);
+    fs.writeFile('./example_logo/logo.svg', logo, function (err) {
+        if (err) {
+            console.log(err);
+        }
+    })
+    console.log("Logo has been generated!");
+})
